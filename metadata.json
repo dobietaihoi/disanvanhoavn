@@ -1,0 +1,6 @@
+{
+  "name": "Di Sản Văn Hóa Phi Vật Thể Việt Nam",
+  "description": "Cổng thông tin giới thiệu Di sản Văn hóa Phi vật thể Việt Nam: Đờn ca tài tử Nam Bộ, Hát Xẩm và Hát Tuồng (Hát Bội).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

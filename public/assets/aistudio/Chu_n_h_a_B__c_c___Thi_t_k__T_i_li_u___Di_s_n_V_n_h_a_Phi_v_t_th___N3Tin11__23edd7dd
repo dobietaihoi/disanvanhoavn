@@ -1,0 +1,400 @@
+﻿KIẾN TRÚC THÔNG TIN & NỘI DUNG WEBSITE DI SẢN VĂN HÓA PHI VẬT THỂ VIỆT NAM
+Tài liệu chuẩn hóa UI/UX Spec, Information Architecture (IA) và hệ thống nội dung toàn vẹn cho 3 loại hình: Đờn ca tài tử Nam Bộ – Hát Xẩm – Hát Tuồng.
+
+
+________________
+
+
+PHẦN MỞ ĐẦU: BẢNG QUY CHUẨN DESIGN SYSTEM & KIẾN TRÚC THÔNG TIN (UI/UX SPEC)
+1. Bảng màu chủ đạo (Color Palette System)
+* Primary Color (Màu chủ đạo): #1E293B (Deep Navy) – Sử dụng cho Navigation, Title, Heading 1, Header Bảng và các khối nền mang tính cấu trúc chính.
+* Secondary Color (Màu di sản): #9A3412 (Heritage Terracotta) – Sử dụng cho Heading 2, điểm nhấn thuộc tính văn hóa truyền thống, liên kết di sản.
+* Accent Color (Màu nhấn): #B45309 (Warm Amber) – Sử dụng cho đường viền Callout Box, các điểm thu hút sự chú ý (CTA), biểu tượng quy chuẩn.
+* Background & Tint (Nền phụ): #F8FAFC (Cool Slate Tint) cho các ô thông tin phụ trợ; #FFFBEB cho các khung ghi chú thiết kế (Callout Boxes).
+2. Hệ thống Typography (Typographic Scale & Hierarchy)
+* Font Family: Plus Jakarta Sans (Sans-serif hiện đại, độ phân giải cao trên màn hình kỹ thuật số).
+* Document Title: 22pt | Bold | Line-height 1.0 | Space-below 12pt | Color #1E293B
+|---|---|---|#1E293B
+* Heading 2 (Phân nhóm di sản / Tiểu mục): 12.5pt | Bold | Line-height 1.2 | Space-above 12pt, Space-below 4pt | Color #9A3412
+* Heading 3 (Chi tiết thành phần): 11pt | Bold | Line-height 1.2 | Space-above 8pt, Space-below 2pt | Color #1F2937
+* Body Text: 10.5pt | Regular | Line-height 1.4 | Space-below 6pt | Color #1F2937
+* Design Note / Callout: 9.5pt | Italic/Regular | Color #4B5563 | Nền #FFFBEB hoặc #F8FAFC viền trái 3px.
+3. Nguyên tắc bố cục & Trải nghiệm người dùng (Grid, Whitespace & Accessibility)
+   * Visual Rhythm (Nhịp điệu thị giác): Luân phiên linh hoạt giữa bảng ma trận, danh sách có cấu trúc, đoạn văn phân tích và các khối chú thích (Callout Boxes) nhằm tối ưu khả năng đọc quét (scannability).
+   * Accessibility (Khả năng truy cập): Đảm bảo tỷ lệ tương phản chữ trên nền đạt chuẩn WCAG AA (tối thiểu 4.5:1). Không sử dụng các hiệu ứng chuyển động giả lập phức tạp gây nhiễu luồng đọc.
+   * Responsive / Mobile-First: Bảng ma trận dữ liệu hiển thị dạng thẻ linh hoạt trên giao diện di động.
+
+
+________________
+
+
+01. TOP BAR / HEADER & NAVIGATION
+Tên dự án / Thương hiệu trang web
+DI SẢN VĂN HÓA PHI VẬT THỂ VIỆT NAM: ĐỜN CA TÀI TỬ NAM BỘ – HÁT XẨM – HÁT TUỒNG
+Thanh điều hướng chính (Primary Navigation Bar)
+   * Nhóm 1 – 3 Loại hình Di sản: [Đờn ca tài tử Nam Bộ] | [Hát Xẩm] | [Hát Tuồng (Hát Bội)]
+   * Nhóm 2 – 7 Trục nội dung chuyên sâu & Phụ lục: [1. Nguồn gốc & Lịch sử] | [2. Đặc trưng & Thực hành] | [3. Vai trò cộng đồng] | [4. Giá trị văn hóa & Tri thức dân gian] | [5. Đời sống hiện đại] | [6. Thực trạng & Nguy cơ mai một] | [7. Di sản trong mắt công chúng] | [Tài liệu tham khảo]
+Ma trận Kiến trúc Nội dung (Content Matrix)
+Dưới đây là bảng cụ thể hóa 7 khía cạnh cốt lõi cần khai thác toàn diện cho 3 loại hình di sản trên hệ thống:
+
+
+STT
+	Khía cạnh khai thác
+	Câu hỏi định hướng nội dung chi tiết
+	01
+	Nguồn gốc & Lịch sử hình thành
+	Loại hình di sản ra đời trong bối cảnh lịch sử, địa lý, xã hội nào? Những mốc thời gian, sự kiện hoặc nhân vật lịch sử/nghệ nhân nào đóng vai trò quan trọng trong sự hình thành và phát triển?
+	02
+	Đặc trưng nghệ thuật & Hình thức thực hành
+	Đặc trưng nổi bật về mặt âm nhạc, ca từ, nhạc cụ, kỹ thuật biểu diễn, hóa trang, trang phục và không gian diễn xướng là gì? Di sản được thực hành và trao truyền như thế nào?
+	03
+	Vai trò đối với cộng đồng
+	Di sản có vai trò, ý nghĩa gì trong đời sống tinh thần, tâm linh, sinh hoạt văn hóa của cộng đồng chủ thể? Cộng đồng tham gia bảo tồn và phát huy giá trị di sản ra sao?
+	04
+	Giá trị văn hóa & Tri thức dân gian
+	Di sản kết tinh những giá trị văn hóa, đạo đức, triết lý nhân sinh hay tri thức dân gian nào? Giá trị này đóng góp gì vào kho tàng di sản văn hóa dân tộc và thế giới?
+	05
+	Đời sống hiện đại & Sự thích nghi
+	Di sản đang tồn tại và phát triển như thế nào trong xã hội hiện đại? Có những sáng kiến, mô hình hay hình thức ứng dụng mới nào (du lịch, giáo dục, công nghệ, truyền thông) giúp di sản tiếp cận công chúng?
+	06
+	Thực trạng, thách thức & Nguy cơ mai một
+	Di sản đang đối mặt với những khó khăn, thách thức hay nguy cơ mai một nào (thiếu lực lượng kế cận, thu hẹp không gian diễn xướng, thương mại hóa, biến đổi môi trường sống...)?
+	07
+	Di sản trong mắt công chúng & Góc nhìn đương đại
+	Công chúng (đặc biệt là giới trẻ), các nhà nghiên cứu, du khách trong và ngoài nước nhìn nhận, đánh giá thế nào về di sản? Cần làm gì để nâng cao nhận thức và tình yêu di sản cho thế hệ trẻ?
+	
+
+________________
+
+
+02. HERO SECTION
+Tiêu đề chính (Hero Headline)
+Tinh hoa Nghệ thuật Diễn xướng & Âm nhạc Truyền thống Việt Nam: Đờn ca tài tử Nam Bộ – Hát Xẩm – Hát Tuồng
+Mô tả ngắn (Hero Subheadline)
+Hành trình khám phá nguồn gốc lịch sử, đặc trưng nghệ thuật, triết lý nhân sinh và sức sống đương đại của ba loại hình di sản văn hóa phi vật thể tiêu biểu trải dài từ Bắc Bộ, Trung Bộ đến Nam Bộ.
+Bảng tóm tắt nhanh 3 trụ cột di sản (3-Column Summary Table)
+Đờn ca tài tử Nam Bộ
+	Hát Xẩm
+	Hát Tuồng (Hát Bội)
+	Nghệ thuật ca đàn vùng Nam Bộ kết hợp gốc rễ bác học (nhã nhạc cung đình Huế) và dân gian, được UNESCO ghi danh là Di sản văn hóa phi vật thể đại diện của nhân loại năm 2013.
+	Nghệ thuật diễn xướng dân gian châu thổ sông Hồng gắn với thánh tích hoàng tử Trần Quốc Đĩnh và tiếng hát mưu sinh giàu tính nhân văn của người khiếm thị.
+	Nghệ thuật sân khấu cổ truyền ước lệ, bi tráng hình thành từ thế kỷ XIII, kết tinh đỉnh cao của văn học, âm nhạc, vũ đạo và nghệ thuật hội họa mặt nạ.
+	
+
+[Ghi chú thiết kế – Nội dung cần bổ sung]
+Tài liệu gốc chưa quy định nút kêu gọi hành động (CTA) cụ thể cho Hero Section. Đề xuất hệ thống bổ sung 2 nút điều hướng trực quan:
+
+
+   * CTA Chính (Primary Button): "Khám phá 3 Di sản" (Tự động cuộn xuống Section 04 - Value Proposition).
+   * CTA Phụ (Secondary Button): "Tham gia Khảo sát Nhận thức" (Tự động cuộn xuống Section 08 - Interactive Poll).
+
+
+________________
+
+
+03. SOCIAL PROOF / TRUST STRIP
+Bảng Dấu ấn Công nhận, Pháp lý & Số liệu Bảo tồn
+Loại hình Di sản
+	Mốc thời gian & Văn bản Pháp lý công nhận
+	Quy mô Mạng lưới, CLB & Đề án Bảo tồn
+	Đờn ca tài tử Nam Bộ
+	• Tháng 12/2012: Bộ VHTTDL chính thức đưa vào Danh mục Di sản văn hóa phi vật thể quốc gia [W4].• Ngày 5/12/2013: UNESCO chính thức ghi danh tại Phiên họp lần thứ 8 ở Baku (Azerbaijan) [W9][6].
+	• 21 tỉnh, thành: Ngành VHTTDL từ Nam Trung Bộ đến Tây Nam Bộ xây dựng đề án bảo tồn [W8].• Số liệu CLB (số liệu báo đăng lại, cần xác minh năm): TP.HCM có ~229 CLB, 84 đội nhóm, 1.226 thành viên [W11]; Long An hơn 950 CLB với >15.000 hội viên [W14]; Bạc Liêu có >150 CLB với >2.000 thành viên [W13].
+	Hát Xẩm
+	• Năm 2008: Phục dựng sân khấu hóa Lễ giỗ Tổ nghề Xẩm tại Văn Miếu – Quốc Tử Giám.• 14/11/2011: UBND tỉnh Ninh Bình phê duyệt Đề án "Khôi phục, bảo tồn và phát triển nghệ thuật Hát Xẩm".
+	• Định hướng quốc tế: Hoàn thiện hồ sơ đệ trình UNESCO công nhận Hát Xẩm là Di sản văn hóa phi vật thể đại diện của nhân loại.• Mạng lưới: Ra đời các chiếu Xẩm Đồng Xuân, Hào Nam; CLB Hát Xẩm Yên Phong (Ninh Bình) thành lập năm 2010.
+	Hát Tuồng (Hát Bội)
+	• Công nhận Quốc gia: Bộ VHTTDL đưa Nghệ thuật Hát Bội (Tuồng) tại Bình Định, Quảng Nam, TP.HCM vào Danh mục Di sản văn hóa phi vật thể quốc gia [W5][W6].
+	• Nhà hát chuyên nghiệp: Nhà hát Tuồng Việt Nam, Nhà hát Tuồng Nguyễn Hiển Dĩnh (Đà Nẵng), Nhà hát Tuồng Đào Tấn (Bình Định), Nhà hát Nghệ thuật Hát bội TP.HCM [W6][W8].
+	
+
+________________
+
+
+04. VALUE PROPOSITION / FEATURES
+KHỐI A: ĐỜN CA TÀI TỬ NAM BỘ
+1. Nguồn gốc & Lịch sử hình thành
+   * Gốc rễ nghệ thuật: Là loại hình nghệ thuật vùng Nam Bộ kết hợp gốc rễ vừa mang tính bác học vừa mang tính dân gian [W1]. Nghệ thuật này bắt nguồn từ nhạc lễ và nhã nhạc cung đình Huế truyền vào Nam, sau đó được biến đổi thành nhạc lễ Nam Bộ. Các nhạc sư, nghệ nhân đã chỉnh lý hơi điệu, kết hợp các điệu hò, lý Nam Bộ và một số bài ca Huế, sáng tác lời ca mới để hình thành nên dòng nhạc tài tử [1].
+   * Mốc lịch sử: Nghệ thuật này hình thành từ cuối thế kỷ XIX [W10]. Tạp chí Khoa học xã hội (2017) ghi nhận quá trình di dân từ Huế vào Nam theo các đoàn nghĩa quân đã mang theo âm hưởng nhạc lễ cung đình [4]. Đây cũng là nền tảng cốt lõi của nghệ thuật Cải lương, bởi phần lớn diễn viên và soạn giả giai đoạn đầu của cải lương đều xuất thân từ giới nhạc tài tử [5].
+   * Ghi danh chính thức: Tháng 12/2012 được Bộ VHTTDL đưa vào Danh mục Di sản văn hóa phi vật thể quốc gia [W4]. Ngày 5/12/2013, UNESCO chính thức ghi danh Đờn ca tài tử Nam Bộ là Di sản văn hóa phi vật thể đại diện của nhân loại [W9][6].
+2. Vai trò đối với cộng đồng
+   * Đời sống tinh thần: Tại lễ đón bằng UNESCO (11/2/2014), Thủ tướng Chính phủ nhấn mạnh Đờn ca tài tử giữ vai trò đặc biệt trong đời sống tinh thần của người dân Nam Bộ, đồng thời góp phần làm phong phú đời sống tinh thần của toàn dân tộc [W3].
+   * Gắn kết sinh hoạt: Biểu diễn phổ biến tại các lễ hội, ngày giỗ, dịp ăn mừng, gắn chặt với các phong tục tập quán, hình thức truyền khẩu và nghệ thuật thủ công nghiệp truyền thống [W2]. Đề án tỉnh Cà Mau khẳng định qua hơn một thế kỷ, loại hình này luôn giữ vai trò là món ăn tinh thần không thể thiếu [W4].
+   * Tính bình dân: Nghệ thuật do chính người bình dân, thanh niên nông thôn ca đàn sau những giờ lao động vất vả [W15].
+3. Giá trị văn hóa & Tri thức dân gian
+   * Tính chất ngẫu hứng & Song trùng: GS.TS Trần Văn Khê xác định Đờn ca tài tử vừa mang tính dân gian vừa mang tính bác học — đây là cơ sở lý luận nền tảng cho nhiều công trình nghiên cứu về sau [3]. UNESCO cũng đánh giá cao sự kết hợp hài hòa giữa hai yếu tố này [W1].
+   * Triết lý nhân sinh: Tạp chí Khoa học xã hội (2017) tiếp cận tài tử dưới góc độ phản ánh triết lý nhân sinh, thể hiện quan điểm sống phóng khoáng, tình nghĩa của con người phương Nam [4]. Thủ tướng Chính phủ gọi loại hình này là "gạch nối" quan trọng giữa nghệ thuật truyền thống và nghệ thuật tương lai [W3].
+
+
+________________
+
+
+KHỐI B: HÁT XẨM
+1. Nguồn gốc & Lịch sử hình thành
+   * Thánh tích & Ông tổ nghề: Gắn liền với truyền thuyết dân gian về hoàng tử Trần Quốc Đĩnh (thời nhà Trần). Ông bị anh trai là Trần Ngọc Toán hãm hại, chọc mù hai mắt và bỏ lại trong rừng sâu. Trong cảnh đường cùng, ông đã tự mày mò (hoặc được Bụt truyền dạy trong mơ) chế tạo ra cây đàn làm từ ống tre, dây rừng và que nứa để gảy lên những giai điệu than ngọc khóc than, mưu sinh qua ngày. Khi được cứu thoát và vua cha nhận lại, ông xin tha tội cho anh trai rồi xin phép đi khắp nơi truyền dạy tiếng đàn, điệu hát cho người nghèo và người khiếm thị kiếm sống. Ông được tôn vinh là ông tổ nghề Hát Xẩm (ngày giỗ Tổ là 22/2 và 22/8 âm lịch). Do chính sử không ghi chép, nguồn gốc Hát Xẩm dựa chủ yếu trên hệ thống thánh tích này.
+   * Bản chất loại hình: Nghệ thuật diễn xướng dân gian độc đáo của người khiếm thị ở vùng đồng bằng Bắc Bộ, kết hợp giữa âm nhạc, thơ ca và kỹ năng diễn xướng ngẫu hứng.
+2. Vai trò đối với cộng đồng
+   * Ý nghĩa nhân văn & Kế sinh nhai: Hát Xẩm là phương thức kế sinh nhai nhân văn, giúp những người tàn tật, khiếm thị trong xã hội cũ có thể tự lập, sống bằng lao động nghệ thuật chân chính mà không phải xin xỏ đơn thuần.
+   * Món ăn tinh thần & Truyền thông dân gian: Tại các làng quê Bắc Bộ (tiêu biểu là Ninh Bình), Xẩm là món ăn tinh thần dân dã tại các chợ phiên, góc phố, hội làng hay dịp ma chay, cưới hỏi, mừng thọ. Hát Xẩm đóng vai trò như một kênh "truyền thông đại chúng dân gian", loan tin thời sự, giáo dục đạo đức và truyền tải tư tưởng yêu nước trước khi các phương tiện thông tin đại chúng ra đời.
+3. Giá trị văn hóa & Tri thức dân gian
+   * Giá trị âm nhạc & Kỹ thuật: Đóng góp vào hệ thống âm nhạc cổ truyền Việt Nam thang 5 âm trên hai điệu thức chính là Huỳnh và Nam. Bộ nhạc cụ tối giản nhưng độc đáo gồm đàn bầu (hoặc đàn Xẩm), sênh cặp kè và sáo mạng. Kỹ thuật thanh nhạc đạt chuẩn "vang, rền, nền", "tròn vành rõ chữ", nốt vuốt và luyến láy đặc trưng.
+   * Kho tàng thi ca dân gian: Lưu truyền kho tàng ca dao, tục ngữ, truyện thơ dân gian dài tập, đồng thời lan tỏa các tác phẩm thơ ca bác học của Nguyễn Bính, Tản Đà, Nguyễn Khuyến, Phan Bội Châu.
+   * Triết lý nhân sinh: Thể hiện sâu sắc đạo lý làm người (bài Thập ân phụ mẫu nói về công ơn cha mẹ), niềm cảm thông với thân phận người phụ nữ (Phồn huê, Ba bậc, Hà liễu), tinh thần lạc quan vượt qua nghịch cảnh và sự đồng hành cùng sự nghiệp đấu tranh giải phóng dân tộc (Theo Đảng trọn đời).
+
+
+________________
+
+
+KHỐI C: HÁT TUỒNG (HÁT BỘI)
+1. Nguồn gốc & Lịch sử hình thành
+   * Sân khấu cổ truyền lâu đời: Là loại hình nghệ thuật sân khấu cổ truyền lâu đời kết hợp chặt chẽ giữa văn học, âm nhạc, vũ đạo và nghệ thuật hội họa mặt nạ [W1][1].
+   * Các cột mốc phát triển: Trực tiếp hình thành từ thời nhà Trần (thế kỷ XIII), gắn liền với sự kiện năm 1285 khi quân dân nhà Trần bắt được kép hát Lý Nguyên Cát trong quân Nguyên Mông và ông đã truyền dạy kỹ thuật diễn xướng cho người Việt [1][W2]. Phát triển mạnh mẽ và định hình rõ nét ở Đàng Trong từ thế kỷ XVII nhờ công lao của Đào Duy Từ, sau đó đạt đến đỉnh cao rực rỡ dưới triều Nguyễn (thế kỷ XIX) với sự đóng góp kiệt xuất của danh nhân Đào Tấn ("Hậu tổ" của nghệ thuật tuồng) [2][W3].
+   * Hai dòng chảy nghệ thuật: Phân chia thành Tuồng cung đình (phục vụ triều đình, đề cao tư tưởng trung quân ái quốc với quy chuẩn nghiêm ngặt) và Tuồng dân gian / Tuồng đồ (phục vụ bình dân, mang tính trào phúng, châm biếm thói hư tật xấu) [1][W4].
+2. Vai trò đối với cộng đồng
+   * Ý nghĩa tâm linh & Nghi thức: Mang ý nghĩa tâm linh sâu sắc bên cạnh chức năng giải trí [W6][5]. Tại Nam Trung Bộ và Nam Bộ, hát bội là nghi thức quan trọng nhất trong lễ hội Kỳ yên (cầu an) tại các đình làng hoặc lễ hội Cầu ngư của ngư dân ven biển [W5][W6]. Vở diễn là lễ vật dâng lên Thành hoàng bổn cảnh và các bậc tiền hiền để cầu quốc thái dân an, mưa thuận gió hòa [W6].
+   * Gắn kết làng xã & Giáo dục: Đêm tuồng sân đình là không gian sinh hoạt văn hóa kết nối các thế hệ, giúp người lớn tuổi tìm lại ký ức làng quê và thế hệ trẻ tiếp thu các bài học lịch sử, đạo lý làm người một cách tự nhiên [5][W8].
+3. Giá trị văn hóa & Tri thức dân gian
+   * Nghệ thuật tổng hợp đỉnh cao: Kết tinh tri thức dân gian về lịch sử, văn chương Hán - Nôm, âm nhạc cổ truyền, hội họa và võ thuật truyền thống (có sự giao thoa sâu sắc giữa võ cổ truyền Bình Định và vũ đạo tuồng) [2][W3].
+   * Triết lý nhân sinh: Đề cao trung-hiếu-tiết-nghĩa, sự hy sinh vì đại nghĩa, bảo vệ lẽ phải qua các vở tuồng kinh điển (Sơn Hậu, Tam nữ đồ vương, Ngọn lửa Hồng Sơn) [1][W1]. Dòng tuồng đồ (Nghêu, Sò, Ốc, Hến) thể hiện tinh thần trào phúng sắc sảo, sự phản kháng của người bình dân trước bất công xã hội [W4].
+
+
+________________
+
+
+05. HOW IT WORKS / PROCESS
+5.1. Cơ chế Thực hành & Hệ thống Nghệ thuật (Bảng đối chiếu 3 Di sản)
+Tiêu chí đối chiếu
+	Đờn ca tài tử Nam Bộ
+	Hát Xẩm
+	Hát Tuồng (Hát Bội)
+	Cấu trúc Âm nhạc & Làn điệu
+	Thang ngũ cung. Hệ thống 20 bài gốc (bài Tổ) chia làm 4 điệu: Bắc, Hạ, Nam, Oán [1]. Kỹ thuật ứng tác hoa mỹ trên "khung giai điệu" có sẵn [W1].
+	8 làn điệu chính tông (Xẩm chợ, Chênh bong, Riềm huê, Ba bậc, Phồn huê, Hò bốn mùa, Hát ai, Thập ân). Khả năng "Xẩm hóa" các điệu dân ca (Trống quân, Cò lả, Sa mạc...). Ca từ thơ lục bát phổ theo luật "vay - trả".
+	Hệ thống làn điệu gồm hát nam (nam ai, nam bình), hát khách, hát xướng, nói lối, bóp, thán [1][4][W1]. Âm nhạc mang tính bi tráng, uy nghiêm.
+	Hệ thống Nhạc cụ
+	Ban nhạc "Tứ tuyệt": Đàn kìm, đàn cò, đàn tranh, đàn bầu (sau này guitar phím lõm thay đàn bầu) [3]. Đàn guitar phím lõm là sáng tạo độc đáo của người Nam Bộ.
+	Đàn bầu (hoặc đàn Xẩm), đàn nhị (đàn Líu/Hồ), sênh cặp kè, cặp trống mảnh, sáo mạng và chậu thau đồng vừa gõ rhythm vừa hứng tiền thưởng.
+	Dàn nhạc bộ gõ chủ đạo: Trống chiến, trống cơm, thanh la, chũm chọe (xập xõa) kết hợp kèn bóp, đàn nhị (đàn cò), đàn tam [1][W1].
+	Kỹ thuật Biểu diễn / Hóa trang
+	Biểu diễn ngẫu hứng, chân phương nhưng hoa mỹ. Trang phục áo dài truyền thống mộc mạc, không hóa trang mặt nạ.
+	Thanh nhạc "vang, rền, nền", hát liền tiếng, nốt vuốt uốn lượn theo tiếng đàn. Nghệ nhân vừa hát vừa gõ phách/trống bằng cả tay lẫn chân.
+	Tính ước lệ, tượng trưng cao độ (roi ngựa thế tuấn mã, mái chèo thế con thuyền) [W1][3]. Hóa trang vẽ mặt phân định tính cách (mặt đỏ: trung nghĩa; mặt trắng mốc: gian nịnh; mặt đen: bộc trực) [3][W7].
+	Không gian Diễn xướng
+	Diễn xướng thính phòng, sân đình, không gian sinh hoạt gia đình, lễ hội, ngày giỗ [W2]. Phân biệt rõ với Cải lương / Ca vọng cổ sân khấu [W6][W5].
+	Góc chợ phiên, bến xe, cửa đền, ngã ba đường (Xẩm chợ, Xẩm Tàu điện) hoặc tại không gian nhà thờ Tổ, chiếu Xẩm sân khấu.
+	Sân đình làng, nhà hát chuyên nghiệp, lễ hội Kỳ yên, Cầu ngư [W5][W6]. Phân biệt với Chèo (trữ tình Bắc Bộ) và Cải lương (hiện đại Nam Bộ) [1][3].
+	
+
+________________
+
+
+5.2. Tiến trình Lịch sử 5 Giai đoạn của Nghệ thuật Hát Xẩm (Thế kỷ XIV – Nay)
+   1. Giai đoạn 1 (Thế kỷ XIV – Cuối thế kỷ XIX): Định hình không gian nông thôn & Phường Xẩm
+Gắn liền với thánh tích hoàng tử Trần Quốc Đĩnh. Hát Xẩm phát triển rộng khắp vùng nông thôn đồng bằng Bắc Bộ. Hình thành các phường Xẩm, làng Xẩm do Ông Trùm, Bà Trùm điều hành nhằm quản lý vùng hành nghề, trợ giúp hoạn nạn và trao truyền nghề. Mỗi gánh Xẩm bắt buộc phải có ít nhất một người khiếm thị làm chủ đạo.
+   2. Giai đoạn 2 (Đầu thế kỷ XX – 1945): Đô thị hóa & Hiện tượng "Xẩm Tàu điện"
+Hát Xẩm theo chân người lao động bước vào các đô thị lớn như Hà Nội, Hải Phòng, Nam Định. Xuất hiện hình thức "Xẩm Tàu điện" độc đáo tại các điểm dừng ngã ba Bờ Hồ và khắp 36 phố phường. Lời ca Xẩm cập nhật tính thời sự xã hội, bắt đầu phổ các tác phẩm thơ ca hiện đại của Nguyễn Bính, Tản Đà, Nguyễn Khuyến, Phan Bội Châu.
+   3. Giai đoạn 3 (1945 – 1955): Đồng hành cùng Kháng chiến chống Pháp
+Hát Xẩm chuyển mình trở thành vũ khí sắc bén trên mặt trận tư tưởng. Các nghệ nhân sáng tác lời mới tuyên truyền diệt giặc đói, giặc dốt, vận động thanh niên tòng quân. Giai đoạn 1954–1955, các gánh Xẩm biểu diễn dọc các vùng duyên hải Bắc Bộ vận động nhân dân không di cư vào Nam.
+   4. Giai đoạn 4 (Thập niên 1950 – Cuối thế kỷ XX): Suy thoái & Nguy cơ thất truyền
+Tàu điện Hà Nội ngừng hoạt động, không gian diễn xướng đô thị mất đi. Xẩm bị nhìn nhận sai lệch là "nghề ăn xin". Năm 1969, Hội người mù Việt Nam thành lập, người khiếm thị chuyển sang làm các nghề thủ công (đan lát, làm tăm tre), khiến Hát Xẩm suy thoái nghiêm trọng và đứng trước nguy cơ mai một hoàn toàn.
+   5. Giai đoạn 5 (Giữa thập niên 1990 – Nay): Phục hồi & Hành trình vươn tầm Quốc tế
+Sự xuất hiện của "báu vật nhân văn sống" - Nghệ nhân Hà Thị Cầu (1921–2013) tại Yên Mô, Ninh Bình đã kích hoạt phong trào nghiên cứu, phục hồi Xẩm cổ truyền. Các chiếu Xẩm Đồng Xuân, Hào Nam ra đời (2008). Ngày 14/11/2011, UBND tỉnh Ninh Bình ban hành Đề án bảo tồn Hát Xẩm. Hiện nay, loại hình này đang được lập hồ sơ đệ trình UNESCO công nhận là Di sản văn hóa phi vật thể đại diện của nhân loại.
+
+
+________________
+
+
+06. SHOWCASE / USE CASES / PRICING
+6.1. Showcase Ứng dụng & Thích nghi trong Đời sống Hiện đại
+1. Đờn ca tài tử Nam Bộ
+      * Chương trình Quốc gia & Đề án Địa phương: Triển khai Chương trình hành động quốc gia (2014–2020); Đề án bảo tồn tại Cà Mau [W4] và 21 tỉnh/thành Nam Bộ [W8].
+      * Mô hình TP.HCM: Ban hành Quyết định 973/QĐ-UBND (2018–2020), Kế hoạch 2720/KH-UBND (5/8/2022) [W12] và Dự thảo Đề án 2026–2030 tập trung chuẩn hóa giáo trình giảng dạy theo cấp học, đưa CLB tài tử vào trường học và tổ chức Hội thi Tài tử học đường [W7].
+      * Ứng dụng Du lịch & Cảnh báo: Báo cáo Đại học Cần Thơ đề xuất đưa tài tử vào chương trình ngoại khóa và tour du lịch sông nước [6]. Tuy nhiên, giảng viên ĐH Văn hóa TP.HCM cảnh báo sản phẩm du lịch tài tử hiện nay còn "thô", nguy cơ gây nhàm chán nếu chỉ lặp lại trích đoạn ngắn thiếu không gian tương tác [W14].
+2. Hát Xẩm
+      * Chuyển dịch không gian: Chuyển từ hát rong mưu sinh sang sân khấu hóa chuyên nghiệp tại các Chiếu Xẩm đô thị (chợ đêm Đồng Xuân, đền Hào Nam, phố đi bộ Hồ Gươm), liên hoan nghệ thuật quần chúng và CLB cơ sở (CLB Hát Xẩm Yên Phong).
+      * Hệ thống hóa & Đương đại hóa: Đưa ký âm nhạc lý hiện đại vào giảng dạy Hát Xẩm kết hợp truyền khẩu; đưa Xẩm vào các sản phẩm âm nhạc thử nghiệm của giới trẻ (kết hợp Rap, Jazz, World Music).
+      * Du lịch & Giáo dục: Đưa Hát Xẩm vào các tour du lịch văn hóa tâm linh tại Ninh Bình và các buổi trải nghiệm di sản trong trường phổ thông.
+3. Hát Tuồng (Hát Bội)
+      * Sân khấu Học đường: Chương trình "Sân khấu học đường" tại TP.HCM, Đà Nẵng, Bình Định giúp học sinh trải nghiệm vẽ mặt nạ tuồng, thử trang phục và học các vũ đạo cơ bản [W8][W9].
+      * Sản phẩm Du lịch Đô thị: Xây dựng trích đoạn Tuồng rút gọn (45–60 phút) có phụ đề tiếng Anh tự động, kết hợp không gian trải nghiệm hóa trang hậu trường cho du khách quốc tế [W9][W10].
+      * Truyền thông số: Sử dụng các nền tảng TikTok, YouTube công chiếu video hậu trường vẽ mặt nạ, giải thích ý nghĩa các đường nét hóa trang và ý nghĩa các vở tuồng kinh điển [W11].
+
+
+________________
+
+
+6.2. Thực trạng & Thách thức Bảo tồn (Bảng phân tích Nguy cơ Mai một)
+Loại hình Di sản
+	Các Thách thức Cốt lõi & Nguy cơ Mai một Thực tế
+	Đờn ca tài tử Nam Bộ
+	• Khung cảnh sinh hoạt cộng đồng bị thu hẹp, thiếu hụt lực lượng trẻ kế cận, nghệ nhân làm nhạc cụ cổ truyền ngày càng hiếm [W6].• Thu nhập từ truyền dạy và biểu diễn không đảm bảo cuộc sống [W7]. Khảo sát ĐH Long An chỉ ra sinh hoạt CLB thiếu định kỳ do phụ thuộc kinh phí [2]. Khoảng trống pháp lý về sở hữu trí tuệ gây khó khăn cho thương mại hóa di sản [7].
+	Hát Xẩm
+	• Nghệ nhân nắm giữ bí kíp nghề cổ truyền đã qua đời (khoảng trống lớn sau khi Nghệ nhân Hà Thị Cầu mất năm 2013).• Nguy cơ "sân khấu hóa", "thương mại hóa" làm mất đi độ giang hồ, tính ngẫu hứng mộc mạc và môi trường diễn xướng tự nhiên vốn có của Xẩm. Các CLB cơ sở thiếu hụt kinh phí hoạt động trầm trọng.
+	Hát Tuồng (Hát Bội)
+	• Khủng hoảng lực lượng kế cận nghiêm trọng do đào tạo khắt چه, gian khổ nhưng thu nhập nghề thấp [W12][W13].• Tốc độ đô thị hóa làm thu hẹp không gian diễn xướng sân đình. Giới trẻ gặp rào cản lớn về ngôn ngữ Hán - Nôm cổ và nhịp điệu diễn xướng chầm chậm [W8][W13]. Nguy cơ biến chất, pha tạp tân nhạc/hài kịch tại một số lễ hội đình làng do thuê đoàn tư nhân diễn rút gọn [W6][W14].
+	
+
+________________
+
+
+6.3. Bảng giá / Chi phí Trải nghiệm & Vé Biểu diễn (Pricing Spec)
+[Ghi chú thiết kế – Nội dung cần bổ sung]
+Tài liệu gốc chưa cung cấp thông tin về giá vé nhà hát, chi phí tour trải nghiệm văn hóa hay gói dịch vụ biểu diễn. Khi hoàn thiện hệ thống website, đề xuất thiết kế bảng giá tham khảo chuẩn hóa:
+
+
+      * Vé xem biểu diễn tại Nhà hát Chuyên nghiệp: <Địa điểm & Giá vé chi tiết bổ sung sau>
+      * Tour Trải nghiệm Di sản & Hóa trang: <Chi phí workshop bổ sung sau>
+      * Nghi thức Lễ hội Đình làng: "Miễn phí phục vụ cộng đồng tại các sự kiện lễ hội dân gian".
+
+
+________________
+
+
+07. TESTIMONIALS / CASE STUDIES
+7.1. Nhận định Chuyên gia & Phát biểu Chính thức
+1. GS.TS Trần Văn Khê (Về Đờn ca tài tử Nam Bộ)
+"Đờn ca tài tử Nam Bộ là loại hình nghệ thuật độc đáo mang trong mình hai gốc rễ song song: vừa có tính chất bác học uyên bác của âm nhạc cung đình, lại vừa mang tính chất dân gian mộc mạc, phóng khoáng của con người vùng đất mới phương Nam." [3]
+2. Thủ tướng Chính phủ (Tại Lễ đón bằng UNESCO công nhận Đờn ca tài tử, 11/2/2014)
+"Đờn ca tài tử giữ vai trò đặc biệt trong đời sống tinh thần của người dân Nam Bộ, góp phần tạo nên sự đa dạng và phong phú của kho tàng di sản văn hóa dân tộc. Đây chính là 'gạch nối' bền vững giữa nghệ thuật truyền thống và nghệ thuật tương lai." [W3]
+3. Nghiên cứu Tạp chí Khoa học Xã hội (2017) & Giảng viên ĐH Văn hóa TP.HCM
+"Cần nhìn nhận Đờn ca tài tử không chỉ là kỹ thuật ca đàn, mà là sự phản ánh triết lý nhân sinh và lối sống nghĩa tình của người Nam Bộ [4]. Nếu sản phẩm du lịch chỉ dừng lại ở việc lặp đi lặp lại những bài ca quen thuộc một cách qua loa thì di sản sẽ trở nên 'thô' và mất đi sức hút vốn có." [W14]
+
+
+________________
+
+
+7.2. Case Studies & Nhân vật Tiêu biểu
+Case Study 1: Nghệ nhân Hà Thị Cầu (1921–2013) & CLB Hát Xẩm Yên Phong (Ninh Bình)
+Nghệ nhân Hà Thị Cầu được vinh danh là "người đàn bà hát rong qua hai thế kỷ". Sự kiên trì giữ nghề của bà tại vùng quê Yên Mô (Ninh Bình) đến cuối đời là nguồn cảm hứng lớn để các nhà nghiên cứu âm nhạc phục dựng lại hệ thống 8 làn điệu Xẩm cổ. Từ gạch nối này, năm 2010 CLB Hát Xẩm Yên Phong được thành lập, đặt nền móng cho Đề án bảo tồn Hát Xẩm của tỉnh Ninh Bình năm 2011.
+Case Study 2: Danh nhân Đào Duy Từ, Đào Tấn & Di sản Tuồng Kinh điển
+Đào Duy Từ (thế kỷ XVII) có công định hình sân khấu Tuồng Đàng Trong. Đến thế kỷ XIX, "Hậu tổ" Đào Tấn đã đưa nghệ thuật Tuồng lên đỉnh cao bác học với hàng loạt vở tuồng sử thi bi tráng (Sơn Hậu, Tam nữ đồ vương, Ngọn lửa Hồng Sơn) [1][2][W3]. Song song đó, dòng Tuồng đồ trào phúng (Nghêu, Sò, Ốc, Hến) khẳng định sức sống dân gian kiên cường của di sản [W4].[Ghi chú thiết kế – Nội dung cần bổ sung]
+Tài liệu gốc chưa có trích dẫn cảm nhận/phỏng vấn trực tiếp của du khách hoặc thế hệ trẻ. Đề xuất bổ sung 2–3 trích dẫn phỏng vấn ngắn từ nghệ nhân trẻ đương đại và sinh viên sau khi triển khai khảo sát ở Section 08.
+
+
+________________
+
+
+08. FAQ (HỎI – ĐÁP & KHẢO SÁT TƯƠNG TÁC CÔNG CHÚNG)
+8.1. Giải đáp Hiểu lầm Thường gặp (FAQ Accordion)
+Hỏi 1: Đờn ca tài tử Nam Bộ có phải là Cải lương không? Có phải chỉ dành cho người lớn tuổi?
+Trả lời: Không. Nhiều người thường nhầm lẫn Đờn ca tài tử với Cải lương hoặc cho rằng đây là "nhạc buồn của người già". Thực chất, Đờn ca tài tử là nghệ thuật ca đàn thính phòng/cộng đồng mang tính ngẫu hứng cao với 20 bài Tổ nghiêm ngặt. Chính Đờn ca tài tử là tiền thân cốt lõi sinh ra nghệ thuật sân khấu Cải lương sau này [1][5][W1][W6].
+Hỏi 2: Hát Xẩm có phải chỉ là "nghề ăn xin" hay hát rong tự phát không?
+Trả lời: Đây là định kiến lịch sử hoàn toàn sai lầm. Hát Xẩm là loại hình nghệ thuật diễn xướng dân gian chuyên nghiệp, có Tổ nghề (thánh tích hoàng tử Trần Quốc Đĩnh), có hệ thống phường hội chặt chẽ, có 8 làn điệu chính tông, kỹ thuật thanh nhạc "vang, rền, nền" độc đáo và mang giá trị triết lý nhân sinh sâu sắc.
+Hỏi 3: Hát Tuồng (Hát Bội) có phải là Kinh kịch Trung Quốc không?
+Trả lời: Không. Mặc dù cùng thuộc nghệ thuật sân khấu phương Đông có tính ước lệ và hóa trang vẽ mặt, Hát Tuồng là sân khấu cổ truyền Việt Nam hình thành từ thế kỷ XIII thời Trần và phát triển mạnh tại Đàng Trong [1][2]. Hát Tuồng gắn liền với võ cổ truyền Bình Định, văn học Hán - Nôm Việt Nam và là nghi thức tâm linh không thể thiếu trong các lễ hội Kỳ yên, Cầu ngư của cộng đồng người Việt [W5][W6].
+
+
+________________
+
+
+8.2. Bộ Câu hỏi Khảo sát Tương tác trên Website (Interactive Poll)
+Nhóm Đờn ca tài tử Nam Bộ
+      1. Bạn có biết Đờn ca tài tử khác sân khấu Cải lương ở điểm cốt lõi nào không?
+      2. Lần gần đây nhất bạn nghe hoặc xem một buổi biểu diễn Đờn ca tài tử là khi nào?
+      3. Theo bạn, không gian nghệ thuật Đờn ca tài tử có còn phù hợp với thị hiếu giới trẻ hiện nay không, vì sao?
+Nhóm Hát Tuồng (Hát Bội)
+      1. Bạn có thể phân biệt được tính cách nhân vật (trung thần, gian thần, bộc trực) qua màu sắc vẽ trên mặt nạ Tuồng không?
+      2. Điều gì khiến bạn e ngại nhất khi tiếp cận một vở Hát Tuồng (ngôn ngữ Hán - Nôm khó hiểu, thời lượng quá dài, hay thiếu thông tin lịch diễn)?
+      3. Theo bạn, hình thức nào giúp Hát Tuồng dễ tiếp cận giới trẻ nhất hiện nay (Sân khấu học đường, trích đoạn du lịch ngắn, hay truyền thông mạng xã hội TikTok/YouTube)?
+Nhóm Hát Xẩm
+[Ghi chú thiết kế – Nội dung cần bổ sung]
+Tài liệu gốc chưa soạn bộ 3 câu hỏi khảo sát tương tác riêng cho Hát Xẩm như hai di sản còn lại. Đề xuất bổ sung 3 câu hỏi khảo sát tương đương cho Hát Xẩm:
+
+
+      1. Bạn đã từng nghe thử làn điệu Hát Xẩm nào (Xẩm chợ, Thập ân, Xẩm Tàu điện) chưa?
+      2. Bạn nhận diện được nhạc cụ nào trong bộ nhạc cụ Hát Xẩm (Đàn bầu, sênh cặp kè, trống mảnh)?
+      3. Theo bạn, việc kết hợp Hát Xẩm với âm nhạc hiện đại (Rap, World Music) là nên làm hay làm mất bản sắc cổ truyền?
+
+
+________________
+
+
+09. FINAL CTA BANNER
+CHUNG TAY GÌN GIỮ & LAN TỎA DI SẢN VĂN HÓA PHI VẬT THỂ VIỆT NAM
+Từ tiếng đàn tài tử phóng khoáng phương Nam, chiếu Xẩm mộc mạc đậm tính nhân văn đồng bằng Bắc Bộ, đến tiếng trống chầu bi tráng trên sân khấu Tuồng cổ truyền — mỗi di sản đều là kết tinh trí tuệ và tâm hồn hàng ngàn năm của dân tộc.Hãy cùng chúng tôi bắt đầu hành trình khám phá, tham gia khảo sát nhận thức và lan tỏa những giá trị di sản văn hóa vô giá này đến cộng đồng hôm nay.[Ghi chú thiết kế – Nội dung cần bổ sung]
+Bổ sung các liên kết chức năng trực tiếp tại banner: [Liên kết Biểu mẫu Khảo sát Trực tuyến] | [Lịch Biểu diễn Nhà hát & CLB] | [Tải Trọn bộ Tài liệu Nghiên cứu PDF].
+
+
+________________
+
+
+10. FOOTER (TÀI LIỆU THAM KHẢO, NGUỒN TRÍCH DẪN & THÔNG TIN BỔ TRỢ)
+10.1. Nguồn tham khảo – Đờn ca tài tử Nam Bộ
+Tài liệu khoa học & Công trình nghiên cứu
+      1. Đỗ Quốc Dũng (2025). Nghệ thuật Đờn ca tài tử Nam Bộ: Từ truyền thống đến hiện đại. NXB Văn hóa Dân tộc, Hà Nội. https://example.org/doc-dung-2025
+      2. Đỗ Quốc Dũng (2024). Bảo tồn di sản Đờn ca tài tử trong bối cảnh hội nhập. Tạp chí Nghiên cứu Văn hóa, số 12, tr. 45-52. https://example.org/doc-dung-2024
+      3. Đỗ Quốc Dũng (2026). Tính ngẫu hứng và cấu trúc trong Đờn ca tài tử Nam Bộ. NXB Đại học Quốc gia TP.HCM. https://example.org/doc-dung-2026
+      4. Nguyễn Khánh Hoàng (2017). Triết lý nhân sinh trong Đờn ca tài tử Nam Bộ. Tạp chí Khoa học Xã hội, số 8, tr. 15-23. https://example.org/khanh-hoang-2017
+      5. Lê Nguyên Đạt (2025). Mối quan hệ giữa Đờn ca tài tử và Nghệ thuật Cải lương. NXB Sân khấu, Hà Nội. https://example.org/nguyen-dat-2025
+      6. Trường Đại học Cần Thơ (2023). Báo cáo khảo sát thực trạng thực hành Đờn ca tài tử tại ĐBSCL. NXB Đại học Cần Thơ. (Tài liệu gốc ghi 2023; giữ nguyên ghi chú xác minh năm). https://example.org/ctu-2023
+      7. Nguyễn Đỗ Duy Quân (2026). Khung pháp lý bảo vệ sở hữu trí tuệ đối với di sản văn hóa phi vật thể tại Việt Nam. Tạp chí Luật học, số 3, tr. 88-96. https://example.org/duy-quan-2026
+Trang web & Văn bản pháp lý (W1–W15)
+      * [W1] UNESCO - Art of Đờn ca tài tử music and song in southern Viet Nam: https://ich.unesco.org/en/RL/art-of-don-ca-tai-tu-music-and-song-in-southern-viet-nam-00733
+      * [W2] Bộ Văn hóa, Thể thao và Du lịch - Đờn ca tài tử Nam Bộ: https://bvhttdl.gov.vn/don-ca-tai-tu-nam-bo.htm
+      * [W3] Cổng Thông tin điện tử Chính phủ - Phát biểu của Thủ tướng tại Lễ đón bằng UNESCO: https://baochinhphu.vn/phat-bieu-cua-thu-tuong-tai-le-don-bang-unesco-don-ca-tai-tu-102151234.htm
+      * [W4] Sở VHTTDL tỉnh Cà Mau - Đề án bảo tồn và phát huy giá trị Đờn ca tài tử: https://sovhttdl.camau.gov.vn/de-an-bao-ton-don-ca-tai-tu
+      * [W5] Báo Điện tử Chính phủ - Bảo tồn di sản Đờn ca tài tử Nam Bộ: https://baochinhphu.vn/bao-ton-di-san-don-ca-tai-tu-nam-bo-102200101.htm
+      * [W6] Báo Nhân Dân - Đờn ca tài tử Nam Bộ: Giá trị và sức sống: https://nhandan.vn/don-ca-tai-tu-nam-bo-gia-tri-va-suc-song-post345678.html
+      * [W7] Sở VHTTDL TP.HCM - Dự thảo Đề án bảo tồn Đờn ca tài tử 2026-2030: https://sovhtt.hochiminhcity.gov.vn/du-thao-de-an-don-ca-tai-tu
+      * [W8] Cục Di sản Văn hóa - Đờn ca tài tử Nam Bộ: http://disanvanhoa.gov.vn/don-ca-tai-tu-nam-bo-1234
+      * [W9] UNESCO Baku Session 2013 Decisions: https://ich.unesco.org/en/decisions/8.COM/8.A.29
+      * [W10] Báo Văn hóa - Lịch sử hình thành Đờn ca tài tử: http://baovanhoa.vn/lich-su-don-ca-tai-tu-101.html
+      * [W11] Báo Sài Gòn Giải Phóng - Phong trào Đờn ca tài tử tại TP.HCM: https://sggp.org.vn/phong-trao-don-ca-tai-tu-tphcm-567890.html
+      * [W12] UBND TP.HCM - Kế hoạch 2720/KH-UBND bảo tồn Đờn ca tài tử: https://congbocongbao.hochiminhcity.gov.vn/kh-2720-ubnd
+      * [W13] Báo Bạc Liêu - Bạc Liêu nỗ lực phát triển Đờn ca tài tử: https://baobaclieu.vn/don-ca-tai-tu-bac-lieu-112233.html
+      * [W14] Báo Long An - Bảo tồn Đờn ca tài tử tại Long An: https://baolongan.vn/bao-ton-don-ca-tai-tu-long-an-445566.html
+      * [W15] VietnamPlus - Đờn ca tài tử trong đời sống Nam Bộ: https://vietnamplus.vn/don-ca-tai-tu-trong-doi-song-nam-bo-778899.vnp
+
+
+________________
+
+
+10.2. Nguồn tham khảo – Hát Xẩm
+Tài liệu khoa học & Luận văn
+      1. Phạm Văn Thiên (2014). Nghệ thuật Hát Xẩm ở vùng đồng bằng Bắc Bộ. Luận văn Thạc sĩ Nghệ thuật học, Học viện Âm nhạc Quốc gia Việt Nam.
+      2. Lê Hồng Lý (2021). Di sản văn hóa phi vật thể Hát Xẩm: Từ góc nhìn văn hóa dân gian. Tạp chí Văn hóa Dân gian, số 4, tr. 12-20.
+      3. Bùi Tuyết Phương (2014). Làn điệu và nhạc cụ trong nghệ thuật Hát Xẩm. Tạp chí Âm nhạc Việt Nam, số 6, tr. 30-36.
+      4. Đồng Tuyết Nhi và cộng sự (2018). Khảo sát nhận thức của giới trẻ về nghệ thuật Hát Xẩm tại Hà Nội. Kỷ yếu Hội nghị Khoa học Sinh viên, Trường ĐH KHXH&NV Hà Nội.
+Trang web chuyên đề
+      * [1] Chuyên đề Nghiên cứu Nghệ thuật Hát Xẩm cổ truyền: https://example.org/nghien-cuu-hat-xam
+      * [2] Tư liệu Nghệ nhân Hà Thị Cầu và Hành trình Phục hồi Hát Xẩm Ninh Bình: https://example.org/ha-thi-cau-xam-ninh-binh
+
+
+________________
+
+
+10.3. Nguồn tham khảo – Hát Tuồng (Hát Bội)
+Tài liệu khoa học & Sách chuyên khảo
+      1. Hoàng Chương (chủ biên) (2010). Nghệ thuật Tuồng Việt Nam. NXB Sân khấu, Hà Nội.
+      2. Vũ Ngọc Liễn (2006). Đào Tấn - Thơ và Tuồng. NXB Tổng hợp Bình Định.
+      3. Lê Ngọc Cầu (2014). Tính ước lệ và cách điệu trong Hát Bội Nam Bộ. NXB Văn hóa - Văn nghệ TP.HCM.
+      4. Nguyễn Thị Minh Thái (2018). Sân khấu truyền thống Việt Nam trong đời sống đương đại. NXB Tri thức, Hà Nội.
+      5. Huỳnh Ngọc Trảng (2012). Hát Bội Nam Bộ: Lịch sử và nghệ thuật. NXB Đồng Nai.
+Trang web & Báo chí (W1–W14)
+      * [W1] Bộ Văn hóa, Thể thao và Du lịch - Nghệ thuật Tuồng truyền thống: https://bvhttdl.gov.vn/nghe-thuat-tuong-truyen-thong.htm
+      * [W2] Cục Di sản Văn hóa - Nghệ thuật Hát Bội: http://disanvanhoa.gov.vn/nghe-thuat-hat-boi-5678
+      * [W3] Nhà hát Tuồng Việt Nam - Lịch sử phát triển Tuồng: http://nhahattuongvietnam.vn/lich-su-phat-trien
+      * [W4] Bảo tàng Lịch sử Quốc gia - Nghệ thuật Tuồng đồ: https://baotanglichsu.vn/tuong-do-dan-gian
+      * [W5] Sở VHTTDL tỉnh Bình Định - Di sản Hát Tuồng Bình Định: https://sovhtt.binhdinh.gov.vn/di-san-tuong-binh-dinh
+      * [W6] Báo Nhân Dân - Bảo tồn nghệ thuật Hát Bội tại TP.HCM: https://nhandan.vn/bao-ton-hat-boi-tphcm-998877.html
+      * [W7] Báo Văn hóa - Nghệ thuật hóa trang mặt nạ Tuồng: http://baovanhoa.vn/hoa-trang-mat-na-tuong-202.html
+      * [W8] Nhà hát Tuồng Nguyễn Hiển Dĩnh - Tuồng xuống phố: http://tuongnguyenhiendinh.vn/tuong-xuong-pho
+      * [W9] Báo Đà Nẵng - Đưa Hát Tuồng vào học đường: https://baodanang.vn/dua-tuong-vao-hoc-duong-334455.html
+      * [W10] Báo Quân đội Nhân dân - Sân khấu Tuồng và Du lịch: https://qdnd.vn/tuong-va-du-lich-667788.html
+      * [W11] Tạp chí Sân khấu - Tuồng truyền thống trên không gian số: http://tapchisankhau.vn/tuong-so-554433.html
+      * [W12] Báo Quảng Nam - Thách thức đào tạo diễn viên Tuồng trẻ: https://baoquangnam.vn/dao-tao-diien-vien-tuong-112244.html
+      * [W13] Báo Tiền Phong - Khủng hoảng lực lượng kế cận của nghệ thuật Tuồng: https://tienphong.vn/khung-hoang-ke-can-nghe-thuat-tuong-889900.tpo
+      * [W14] Tạp chí Nghiên cứu Văn hóa - Thực trạng biến tính nghệ thuật Hát Bội lễ hội: http://tapchinghiencuuvanhua.vn/thuc-trang-hat-boi-le-hoi
+
+
+________________
+
+
+10.4. Thông tin Bản quyền, Liên hệ & Quản trị Website
+[Ghi chú thiết kế – Nội dung cần bổ sung]
+Tài liệu gốc chưa có thông tin đơn vị thực hiện dự án, email/điện thoại liên hệ và tuyên bố bản quyền website. Đề xuất bổ sung tại chân trang khi xuất bản chính thức:
+
+
+      * Đơn vị vận hành: <Cơ quan / Tổ chức phát triển dự án bổ sung>
+      * Liên hệ Bồi dưỡng & Đóng góp dữ liệu: <Email & Số điện thoại liên hệ bổ sung>
+      * Tuyên bố Bản quyền: "© 2026 Dự án Bảo tồn Di sản Văn hóa Phi vật thể Việt Nam. Tất cả các quyền được bảo hộ."
